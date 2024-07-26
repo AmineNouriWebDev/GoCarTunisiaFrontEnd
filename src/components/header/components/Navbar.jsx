@@ -47,8 +47,8 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-3" href="#pricing">
-                    Pricing
+                  <a class="nav-link px-3" href="#testimonial">
+                    Testimonials
                   </a>
                 </li>
                 <li class="nav-item">
@@ -56,11 +56,7 @@ export default function Navbar() {
                     Services
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link px-3" href="#blog">
-                    Blog
-                  </a>
-                </li>
+
                 <li class="nav-item">
                   <a class="nav-link px-3" href="#action">
                     Contact

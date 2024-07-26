@@ -1,168 +1,44 @@
-.conbg {
-    width: 100%;
-    height: 500px;
+.client {
+  width: 100%;
+  height: 100%;
+  background: #ff7f00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff7f00,
+    #9d584f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff7f00,
+    #9d584f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.bg2 {
-    z-index: 2;
-    position: relative;
-    width: 70%;
-    margin: 100px auto;
-    transform: rotate(10deg);
-    background-image: url('../../images/car1.png');
-    background-size: cover;
-    background-position: right -50px;
-    background-color: lightslategray;
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+.carousel-icon i {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.bg1 {
-    z-index: 3;
-    position: relative;
-    margin: auto;
-    transform: rotate(-5deg);
-    background-image: url('../../images/car2.png');
-    background-size: cover;
-    background-position: right -70px;
-    background-color: lightslategray;
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+.carousel-item i {
+  font-size: 1.6rem;
+  color: white;
 }
 
-.bg {
-    z-index: 4;
-    position: relative;
-    margin: auto;
-    transform: rotate(-5deg);
-    height: 500px;
-    background-image: url('../../images/car3.png');
-    background-size: cover;
-    background-position: right -50px;
-    background-color: lightslategray;
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+.t-card {
+  padding: 1.8125rem 1.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.25rem;
+  color: #fff;
+  height: auto;
 }
 
-.bg-text {
-    width: 100%;
-    position: absolute;
-    display: inline-block;
-    bottom: 0;
-    left: 0;
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 1.5625rem solid transparent;
+  border-right: 1.5625rem solid transparent;
+  border-top: 1.25rem solid rgba(0, 0, 0, 0.5);
 }
-
-.bg-text a {
-    margin: 5px;
-    float: right;
-}
-
-#bg1:target .bg {
-    -webkit-animation: ciut 1s forwards;
-    animation: ciut 1s forwards;
-}
-
-#bg1:target {
-    -webkit-animation: fre 0.3s forwards;
-    animation: fre 0.3s forwards;
-}
-
-#bg2:target .bg1 {
-    -webkit-animation: ciut 1s forwards;
-    animation: ciut 1s forwards;
-}
-
-#bg2:target {
-    -webkit-animation: fre1 0.3s forwards;
-    animation: fre1 0.3s forwards;
-}
-
-#conbg:target .bg2 {
-    -webkit-animation: ciut1 1s;
-    animation: ciut1 1s;
-}
-
-@-webkit-keyframes fre1 {
-    0% {
-        transform: rotate(10deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes fre1 {
-    0% {
-        transform: rotate(10deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@-webkit-keyframes fre {
-    0% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        transform: rotate(-10deg);
-    }
-}
-
-@keyframes fre {
-    0% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        transform: rotate(-10deg);
-    }
-}
-
-@-webkit-keyframes ciut {
-    0% {
-        opacity: 1;
-        transform: rotate(-5deg) scale(1);
-    }
-
-    100% {
-        opacity: 0;
-        transform: rotate(360deg) scale(0);
-    }
-}
-
-@keyframes ciut {
-    0% {
-        opacity: 1;
-        transform: rotate(-5deg) scale(1);
-    }
-
-    100% {
-        opacity: 0;
-        transform: rotate(360deg) scale(0);
-    }
-}
-
-@-webkit-keyframes ciut1 {
-    0% {
-        opacity: 0;
-        transform: rotate(0deg) scale(0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotate(370deg) scale(1);
-    }
-}
-
-@keyframes ciut1 {
-    0% {
-        opacity: 0;
-        transform: rotate(0deg) scale(0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotate(370deg) scale(1);
-    }
+.testimonial-color {
+  color: white;
 }
